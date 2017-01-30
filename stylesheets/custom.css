@@ -1,0 +1,392 @@
+@font-face {
+    font-family: binx;
+    src: url(../Binx.ttf);
+}
+
+@font-face {
+    font-family: josefin;
+    src: url(../JosefinSans-Bold.ttf);
+}
+
+*{
+  font-family: josefin !important;
+}
+
+@media only screen and (max-width: 596px) {
+    .artista-panel{
+      max-height: 123px;
+}
+}
+
+@media only screen and (max-width: 365px) {
+    .artista-panel{
+      max-height: 100px;
+}
+}
+
+.artista-panel{
+  max-height: 157px;
+}
+
+.mapa {
+  cursor: pointer;
+  overflow: hidden;
+  min-height: 400px;
+}
+
+.icono{
+  width: 20px;
+  margin-right: 1.2em ;
+}
+
+.binx{
+  font-family: binx !important;
+}
+
+
+.mapa > img{
+  transform: scale(2);
+  transition: all 0.5s;
+  margin-top: -122px;
+  vertical-align: middle !important;
+}
+
+
+.mapa:hover  > .img-responsive   {
+  transform:  scale(0.7);
+
+}
+
+  p {
+      /*font-family: binx !important;*/
+      text-align: justify;
+      font-size: 1.1em;
+  }
+
+.artista-img{
+  transition: all 1s;
+}
+
+.social img{
+  cursor: pointer;
+}
+
+.cabecera-seccion{
+    padding: 1.3em 0;
+}
+
+.line-up-row {
+  margin-bottom: 2em !important;
+}
+
+
+.artista-panel:hover .artista-img{
+  -ms-transform: scale(1.2,1.2); /* IE 9 */
+   -webkit-transform: scale(1.2,1.2); /* Safari */
+   transform: scale(1.2,1.2);
+}
+
+.artista-panel, .mapa {
+        transform: translateY(0) !important ;
+}
+
+.artista-titulo{
+
+}
+
+
+body::-webkit-scrollbar {
+    width: 1em;
+    z-index: 99999;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(1,1,0,0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #eedc2f;
+  outline: 1px solid slategrey;
+}
+
+.artista-panel:hover .artista-info{
+  bottom: 70% !important;
+}
+
+#sponsors{
+  /*height: 1vh ;*/
+}
+#mapa{
+
+    height: 300px;
+
+  background: #fff !important;
+  
+}
+
+html{
+  margin:0;
+  padding: 0;
+  background: url(../images/parallax2.jpg) no-repeat center center fixed ;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+
+}
+#sponsors{
+  background: #fff !important;
+}
+ #somos, #somos > p {
+        background: #fff !important;
+  color: #333  !important;
+
+}
+.button:hover, .button:focus {
+    background-color: #1f0173;
+    color: #fefefe;
+}
+
+.patrocinador-img{
+  filter: grayscale(100%);
+  cursor: pointer;
+  transition: all .5s;
+      vertical-align: middle;
+}
+.patrocinador-img:hover{
+  filter: grayscale(0);
+}
+
+p{color:#111;}
+
+.rojo {
+  color : #e51027;
+}
+
+.amarillo{
+  color: #eedc2f !important;
+}
+.rojo-claro{
+  color:#c22d2b;
+}
+
+.purpura-oscuro{
+  color: #14002c !important;
+}
+
+[class^="blend"][class*="-red"] {
+    background: #c22d2b !important;
+}
+
+[class^="blend"][class*="-red"]:after {
+    background: #14002c;
+}
+
+body{
+  background:transparent;
+  overflow-x: hidden;
+}
+.rounded{
+    border-radius: 100%;
+    /*max-height: auto;*/
+}
+
+#contacto {
+  margin:0;
+  padding: 0;
+    /*background: url(../images /parallax2.jpg) no-repeat center center  !important;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+.artista-panel .artista-info {
+  left: 0 !important;
+  right: 0 !important;
+  background-color: transparent;
+  transition: opacity .5s, bottom .5s;
+  visibility: hidden;
+  opacity: 0;
+  display: block;
+  bottom: -10% !important;
+  transform: translateY(100%) !important;
+  position: absolute;
+  z-index: 5;
+  /* bottom: 44%; */
+  text-align: center;
+  margin: 0 auto !important  ;
+  }
+.img-responsive{
+  width: 100%;
+}
+
+
+.imagen-mapa{
+  z-index: -3;
+}
+
+.seccion
+{
+  background:transparent !important;
+  padding: 4em 0;
+  color: #fff !important;
+  min-height: 100vh;
+}
+
+.menu li a {
+  transition: all 0.9s;
+  padding: 0.5rem 0.9rem;
+  border: 1px solid #eedc2f;
+  margin-left: 5px;
+  border-radius: 5px;
+  margin-left: 12px;
+  border-bottom: 2px solid #e1dc2f;
+    font-size: 15px;
+    transition: border 0s;
+  /*font-family: xball !important;*/
+}
+
+.menu li a:hover{
+
+  background:  #e1dc2f !important;
+  color: #fff !important;
+}
+
+#loader{
+  width: 100%;
+  height: 100vh;
+  background: #e51027;
+  position: fixed;
+  z-index: 200;
+}
+
+
+.menu li a:hover{
+  color: #e51027;
+}
+
+.afiche-contenedor {
+  padding-top: 5em;
+  width: 500px;
+  margin: 0 auto !important;
+}
+
+span{
+    /*font-family: binx !important;*/s
+}
+
+.texto-izquierda{
+  font-family: binx !important;
+  position: absolute;
+  top:16rem;
+  left:3.1em;
+  text-align: center;
+}
+
+.texto-resaltado{
+  color: #e51027;
+}
+
+.texto-derecha{
+  position: absolute;
+  top:16rem;
+  right:  3.1em;
+  text-align: center;
+  max-width: 400px;
+}
+
+.fondo{
+  width: 100%;
+  position: static;
+  top:0;
+  z-index: -2;
+}
+
+#inicio{
+  background: transparent;
+  padding-top: 2em;
+  height: 100vh;
+}
+
+
+.texto-mapa
+{
+  left: 0 !important;
+  right: 0 !important;
+  transition: opacity .5s, top .5s;
+  display: block;
+
+  transform: translateY(100%) !important;
+  position: absolute;
+  z-index: 100;
+  /* bottom: 44%; */
+  text-align: center;
+  margin: 0 auto !important  ;
+      top: 38%;
+
+}
+.mapa:hover .texto-mapa{
+  top: -100px !important;
+
+}
+
+.mapa:hover .fondo-mapa{
+  background: #fff;
+  z-index: -1;
+}
+
+.fondo-mapa{
+  background: rgba(208, 114, 51, 0.75);
+
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+
+.button {
+    border-radius: 30px;
+    color: #fff;
+    font-size: 0.8em;
+    padding: 15px 25px;
+
+}
+
+#line-up{
+  background: #eedc2f !important;
+  -moz-box-shadow:    inset 0 13px 47px rgba(0, 0, 0, 0.48);
+-webkit-box-shadow: inset 0 13px 47px rgba(0, 0, 0, 0.48);
+box-shadow: inset 0 13px 47px rgba(0, 0, 0, 0.48);
+}
+
+.logos-footer{
+  width: 120px;
+}
+
+.animated {
+    -webkit-animation-duration: 2.5s !important;
+    animation-duration: 2.5s !important;
+}
+
+.parallax-background {
+
+  margin:0;
+  padding: 0;
+  background: url(../images/parallax2.jpg) no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+
+.parallax-content {
+
+	position: relative;
+
+
+	background-color: #fff;
+}
