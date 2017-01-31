@@ -21,9 +21,32 @@
 <script src="javascripts/custom.js"></script>
 </head>
   <body>
+  <style>
+   .spinner{margin:100px auto;width:50px;height:40px;text-align:center;font-size:10px}.spinner>div{background-color:#fff;height:100%;width:6px;display:inline-block;-webkit-animation:sk-stretchdelay 1.2s infinite ease-in-out;animation:sk-stretchdelay 1.2s infinite ease-in-out}.spinner .rect2{-webkit-animation-delay:-1.1s;animation-delay:-1.1s}.spinner .rect3{-webkit-animation-delay:-1s;animation-delay:-1s}.spinner .rect4{-webkit-animation-delay:-.9s;animation-delay:-.9s}.spinner .rect5{-webkit-animation-delay:-.8s;animation-delay:-.8s}@-webkit-keyframes sk-stretchdelay{0%,100%,40%{-webkit-transform:scaleY(.4)}20%{-webkit-transform:scaleY(1)}}@keyframes sk-stretchdelay{0%,100%,40%{transform:scaleY(.4);-webkit-transform:scaleY(.4)}20%{transform:scaleY(1);-webkit-transform:scaleY(1)}}
+   .spinner{    margin: 100px auto;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    font-size: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 19%;}
+  </style>
 
-    <div id="loader">
-      <h1 style="color:#fff">CARGANDO</h1>
+    <div id="loader" style="">
+      <div class="spinner">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+      </div>        
+      <h1 class="text-loader">
+      
+      CARGANDO
+
+      </h1>
     </div>
 
     <div  class="fondo">
@@ -36,7 +59,9 @@
         <ul class="menu">
           <li><a href="#inicio">Inicio</a></li>
           <li><a href="#line-up">Line Up</a></li>
-          <li><a href="#">Nosotros</a></li>
+          <li><a href="#mapa">Espacios</a></li>
+          <li><a href="#sponsors">Sponsors</a></li>
+          <!--<li><a href="#">Nosotros</a></li>-->
           <li><a href="#contacto">Contacto</a></li>
         </ul>
       </div>
@@ -63,7 +88,7 @@
    <section id="line-up" class="parallax-content seccion">
   <h1 class="purpura-oscuro cabecera-seccion text-center">Line Up</h1>
   <div class="line-up-row row">
-      <div class="row align-center small-up-2 medium-up-2 large-up-5">
+      <div class="row align-center small-up-2 medium-up-4 large-up-5">
       <div class="column column-block">
             <div class="blend-red  artista-panel">
               <div class="artista-info">
@@ -372,10 +397,10 @@
 
        <h5 class="text-center">VISITA NUESTRAS REDES :</h5>
        <p class="social text-center">
-          <a href=""><img src="images/yt.png"></a>
-          <a href=""><img src="images/in.png"></a>
-          <a href=""><img src="images/fb.png"></a>
-          <a href=""><img src="images/tw.png"></a>
+          <a target="_blank" href="https://www.youtube.com/channel/UCbqtA3pkeHviJpVEdyZ9Mkw"><img src="images/yt.png"></a>
+          <a target="_blank" href="https://www.instagram.com/sancochofest/"><img src="images/in.png"></a>
+          <a target="_blank" href="https://www.facebook.com/sancochofest"><img src="images/fb.png"></a>
+          <a target="_blank" href="https://twitter.com/festsancocho"><img src="images/tw.png"></a>
        </p>
 
 

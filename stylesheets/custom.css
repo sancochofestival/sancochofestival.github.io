@@ -14,13 +14,54 @@
 
 @media only screen and (max-width: 596px) {
     .artista-panel{
-      max-height: 123px;
+      max-height: 123px !important;
 }
+  .seccion{
+    min-height: auto !important;
+  }
+}
+@media only screen and (max-width: 927px) {
+   .artista-panel{
+      max-height: 123px !important;
+}
+}
+
+@media only screen and (max-width: 704px) {
+   .artista-panel{
+      max-height: 110px !important;
+}
+}
+@media only screen and (max-width: 1163px) {
+   .artista-panel{
+      max-height: 120px !important;
+}
+}
+
+
+.text-loader {
+  color: #fff;
+  width: 500px;
+  text-align: center;
+  margin: 20% auto !important;
 }
 
 @media only screen and (max-width: 365px) {
     .artista-panel{
-      max-height: 100px;
+      max-height: 80px !important;
+}
+}
+
+@media only screen and (max-width: 800px) {
+    .texto-izquierda{
+      top:15% !important;
+}
+.texto-izquierda > h1{
+  font-size: 4em !important;
+}
+    .texto-derecha{
+      top:60% !important;
+      right: 0 !important;
+      left: 0 !important;
 }
 }
 
